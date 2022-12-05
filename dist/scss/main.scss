@@ -1,8 +1,9 @@
 @import 'config';
+@import 'home';
 
 body {
   background: $primary-color;
-  color: $text-color;
+  color: set-text-color($primary-color);
   height: 100vh;
   font-family: 'Times New Roman', Times, serif;
   line-height: 1;
@@ -13,7 +14,7 @@ h1, h2, h3, h4 {
 }
 
 a {
-  color: $text-color;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -32,5 +33,25 @@ main {
     position: fixed;
     bottom: 1rem;
     left: 1rem;
+
+    a {
+      padding: 0.4rem;
+      @include transition-ease;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
   }
+}
+
+footer {
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0.5rem;
+  right: 1rem;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+
+
 }
