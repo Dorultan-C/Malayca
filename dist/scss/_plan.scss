@@ -38,7 +38,7 @@
     margin: 2rem auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 2rem;
+    grid-gap: 1rem;
 
     .input-data {
       border-radius: 10px;
@@ -46,8 +46,15 @@
       padding: 0.5rem;
       border-bottom: 5px solid $accent-color;
       color: $text-color;
+      font-size: 1rem;
+    }
+
+    .input-name {
+      text-align: center;
+      font-size: 1.5rem;
     }
   }
+
   button {
     margin: auto;
 
